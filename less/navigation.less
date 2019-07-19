@@ -1,1 +1,32 @@
 // Navigation code here
+nav{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    margin-bottom:5%;
+
+    @media @mobile{
+        width:280%;
+        display:block;
+        right:140px;
+        position:relative;
+    }
+
+    a{
+        font-size:20px;
+        text-decoration: none;
+        color:@nav-font;
+        margin:0 2%;
+
+        &:hover{
+            background:@nav-font;
+            color:@nav-border;
+        }
+
+        @media @mobile{
+            width:100%;
+            text-align:center;
+
+        }
+    }
+}
