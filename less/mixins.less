@@ -1,1 +1,18 @@
 // Mixins Here
+.custom-layout(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.custom-button(@bg-color:#22283A, @width:100px, @font:@main-border-color){
+    display: block;
+    background-color: @bg-color;
+    margin: 0px 10px 20px 0px;
+    cursor: pointer;
+    width: @width;
+    height: 40px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color:@font;
+}
